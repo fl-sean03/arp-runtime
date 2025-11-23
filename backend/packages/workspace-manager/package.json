@@ -1,0 +1,24 @@
+{
+  "name": "@codex/workspace-manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.23.0",
+  "dependencies": {
+    "@types/tar-stream": "^3.1.4",
+    "dockerode": "^4.0.9",
+    "tar-stream": "^3.1.7"
+  },
+  "devDependencies": {
+    "@types/dockerode": "^3.3.47",
+    "typescript": "^5.9.3"
+  }
+}

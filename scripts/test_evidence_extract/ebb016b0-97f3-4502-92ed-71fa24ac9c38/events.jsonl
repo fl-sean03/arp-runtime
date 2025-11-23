@@ -1,0 +1,3 @@
+{"type":"run-start","ts":"2025-11-23T02:20:15.326Z","runId":"ebb016b0-97f3-4502-92ed-71fa24ac9c38"}
+{"type":"token","ts":"2025-11-23T02:20:15.382Z","runId":"ebb016b0-97f3-4502-92ed-71fa24ac9c38","delta":"Mock response","sequence":0}
+{"type":"run-complete","ts":"2025-11-23T02:20:15.438Z","runId":"ebb016b0-97f3-4502-92ed-71fa24ac9c38","status":"succeeded"}

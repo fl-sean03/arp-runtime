@@ -1,0 +1,35 @@
+version: "3.9"
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: arp
+      POSTGRES_PASSWORD: arp
+      POSTGRES_DB: arp
+    ports:
+      - "5432:5432"
+    volumes:
+      - arp-dev-db:/var/lib/postgresql/data
+
+  orchestrator:
+    build:
+      context: .
+      dockerfile: backend/infra/docker/orchestrator.Dockerfile
+    env_file:
+      - .env
+    depends_on:
+      - db
+    ports:
+      - "8080:3000"
+    volumes:
+      - .:/app
+      - /var/run/docker.sock:/var/run/docker.sock
+      # Exclude node_modules to avoid host system interference
+      - /app/node_modules
+      - /app/backend/packages/orchestrator/node_modules
+      - /app/backend/packages/shared/node_modules
+      - /app/backend/packages/workspace-manager/node_modules
+    command: pnpm --filter @codex/orchestrator dev
+
+volumes:
+  arp-dev-db:

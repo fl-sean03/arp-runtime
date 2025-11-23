@@ -1,0 +1,21 @@
+{
+  "name": "@codexrt/codex-worker",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts"
+  },
+  "dependencies": {
+    "@openai/codex-sdk": "^0.61.0",
+    "fastify": "^4.26.1",
+    "pino": "^10.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3"
+  }
+}

@@ -1,0 +1,1 @@
+{"root":["./src/index.ts","./src/logger.ts","./src/metrics.ts","./src/background/idle-reaper.ts","./src/lib/lock-manager.ts","./src/lib/quota.ts","./src/plugins/auth.ts"],"version":"5.9.3"}

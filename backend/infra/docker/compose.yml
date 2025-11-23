@@ -1,0 +1,40 @@
+services:
+  postgres:
+    networks:
+      - codex-net
+    image: postgres:15-alpine
+    container_name: codex_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgrespassword
+      POSTGRES_DB: codexrt
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  orchestrator:
+    build:
+      context: ../../../
+      dockerfile: backend/infra/docker/orchestrator.Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - postgres
+    environment:
+      POSTGRES_URL: postgres://postgres:postgrespassword@postgres:5432/codexrt
+      # Assuming OPENAI_API_KEY is in .env file, docker-compose picks it up
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      WORKSPACE_IMAGE: codexrt-workspace:v0.1
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - codex-net
+
+volumes:
+  postgres_data:
+
+networks:
+  codex-net:
+    name: codex-net
+    driver: bridge

@@ -1,0 +1,16 @@
+# Node / build artifacts
+node_modules/
+dist/
+build/
+coverage/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Docker / System artifacts
+*.log
+evidence/
+backend/evidence/
+.DS_Store

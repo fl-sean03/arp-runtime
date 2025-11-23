@@ -1,0 +1,42 @@
+{
+  "run": {
+    "id": "ebb016b0-97f3-4502-92ed-71fa24ac9c38",
+    "user_id": "a0b029bc-3bad-4669-9a3b-0fe967b237e1",
+    "project_id": "47469a9d-6050-4e35-9691-46ac59cf79f2",
+    "workspace_id": "894ccf7b-b4a6-4c36-8b29-06f2d57f7875",
+    "status": "succeeded",
+    "prompt": "List files in current directory",
+    "final_text": "Mock response",
+    "diff": "",
+    "test_output": null,
+    "error_message": null,
+    "started_at": "2025-11-23T02:20:15.326Z",
+    "finished_at": "2025-11-23T02:20:15.438Z",
+    "duration_ms": 112,
+    "input_tokens": null,
+    "output_tokens": null,
+    "git_commit": "7fd1a60b01f91b314f59955a4e4d4e80d8edf11d",
+    "image_name": "codexrt-workspace:v0.1",
+    "image_digest": "sha256:59ae2fccc3471343d14d5bb1df15a7b2f3f8d5ef23a80f373f02d21e133629bf",
+    "env_snapshot": {
+      "evidencePath": "/workspace/evidence/ebb016b0-97f3-4502-92ed-71fa24ac9c38",
+      "hasCommandLog": true,
+      "hasOutputsManifest": true
+    }
+  },
+  "workspace": {
+    "id": "894ccf7b-b4a6-4c36-8b29-06f2d57f7875",
+    "user_id": "a0b029bc-3bad-4669-9a3b-0fe967b237e1",
+    "project_id": "47469a9d-6050-4e35-9691-46ac59cf79f2",
+    "state": "warm",
+    "container_id": "f5028bc56a95813c276193aea4e869c9bb17622c593a1eb8d9a88aef9f7f060f",
+    "volume_name": "ws-47469a9d-6050-4e35-9691-46ac59cf79f2",
+    "thread_id": "mock-thread-1763864415365",
+    "image_name": "codexrt-workspace:v0.1",
+    "image_digest": "sha256:59ae2fccc3471343d14d5bb1df15a7b2f3f8d5ef23a80f373f02d21e133629bf",
+    "runtime_metadata": null,
+    "last_active_at": "2025-11-23T02:20:15.527Z",
+    "idle_expires_at": "2025-11-23T02:40:15.527Z"
+  },
+  "generatedAt": "2025-11-23T02:20:15.560Z"
+}
