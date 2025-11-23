@@ -9,7 +9,7 @@
     "start": "pnpm --filter @codex/orchestrator start",
     "build": "pnpm -r build",
     "migrate": "node scripts/migrate.js",
-    "ci": "./ci_v0.3.sh",
+    "ci": "./scripts/ci/ci_v0.3.sh",
     "dev": "docker compose -f docker-compose.dev.yml up"
   },
   "devDependencies": {

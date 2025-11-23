@@ -86,8 +86,8 @@ fi
 
 # Test Suite 1: Advanced Verification (Mocks & Logic)
 log_info "Running Suite 1: Advanced Verification (verify_advanced.sh)..."
-chmod +x ./verify_advanced.sh
-if ./verify_advanced.sh; then
+chmod +x scripts/verify_advanced.sh
+if ./scripts/verify_advanced.sh; then
     log_info "Suite 1 PASSED."
 else
     log_error "Suite 1 FAILED."
@@ -97,8 +97,8 @@ fi
 # Test Suite 2: Real Codex Verification (Conditional)
 if [ -n "$OPENAI_API_KEY" ]; then
     log_info "OPENAI_API_KEY detected. Running Suite 2: Real Codex Verification (verify_real_codex.sh)..."
-    chmod +x ./verify_real_codex.sh
-    if ./verify_real_codex.sh; then
+    chmod +x scripts/verify_real_codex.sh
+    if ./scripts/verify_real_codex.sh; then
         log_info "Suite 2 PASSED."
     else
         log_error "Suite 2 FAILED."

@@ -67,16 +67,16 @@ run_test "scripts/verify_gc.js"
 
 # 3. Run v0.1 Regression (Patched verify_advanced.sh)
 log_info "Running v0.1 Regression Suite (verify_advanced.sh)..."
-if [ -f "./verify_advanced.sh" ]; then
-    chmod +x ./verify_advanced.sh
-    if ./verify_advanced.sh; then
+if [ -f "scripts/verify_advanced.sh" ]; then
+    chmod +x scripts/verify_advanced.sh
+    if ./scripts/verify_advanced.sh; then
         log_info "PASS: verify_advanced.sh"
     else
         log_error "FAIL: verify_advanced.sh"
         exit 1
     fi
 else
-    log_error "verify_advanced.sh not found!"
+    log_error "scripts/verify_advanced.sh not found!"
     exit 1
 fi
 
