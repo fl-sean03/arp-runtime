@@ -1,1 +1,0 @@
-{"mcpServers":{"context7":{"command":"npx","args":["-y","@upstash/context7-mcp"],"env":{"DEFAULT_MINIMUM_TOKENS":""},"alwaysAllow":["resolve-library-id","get-library-docs"]},"brave-search":{"command":"npx","args":["-y","@modelcontextprotocol/server-brave-search"],"env":{"BRAVE_API_KEY":"BSApIZ5dDDVPMWpWkMvSRtXjZnF73fP"},"alwaysAllow":["brave_web_search","brave_local_search"]}}}

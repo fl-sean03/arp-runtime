@@ -14,3 +14,5 @@ coverage/
 evidence/
 backend/evidence/
 .DS_Store
+# Roo artifacts
+.roo/
